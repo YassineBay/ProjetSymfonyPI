@@ -2,8 +2,9 @@
 # https://symfony.com/doc/current/security.html
 security:
     encoders:
-        FOS\UserBundle\Model\UserInterface: bcryp
-    role_hierarchy:
+        AppBundle\Entity\User: 'sha512'
+        #FOS\UserBundle\Model\UserInterface: bcryp
+    role_hierarchy: #here we can add our roles
         ROLE_ADMIN:       ROLE_USER
         ROLE_SUPER_ADMIN: ROLE_ADMIN
 
