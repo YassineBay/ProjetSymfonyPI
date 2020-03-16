@@ -7,7 +7,7 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * Colis
  *
- * @ORM\Table(name="colis", indexes={@ORM\Index(name="AddingForeinfKeywhatever", columns={"idUtilisateur"})})
+ * @ORM\Table(name="colis", indexes={@ORM\Index(name="AddingForeinfKeywhatever", columns={"idutilisateur"})})
  * @ORM\Entity
  */
 class Colis
@@ -71,11 +71,11 @@ class Colis
     private $reward;
 
     /**
-     * @var \Personne
+     * @var \User
      *
-     * @ORM\ManyToOne(targetEntity="Personne")
+     * @ORM\ManyToOne(targetEntity="User")
      * @ORM\JoinColumns({
-     *   @ORM\JoinColumn(name="idUtilisateur", referencedColumnName="idutilisateur")
+     *   @ORM\JoinColumn(name="idUtilisateur", referencedColumnName="id")
      * })
      */
     private $idutilisateur;

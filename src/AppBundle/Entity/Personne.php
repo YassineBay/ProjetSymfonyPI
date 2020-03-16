@@ -57,29 +57,15 @@ class Personne
     private $image;
 
     /**
-     * @var \FosUser
+     * @var \User
      *
-     * @ORM\ManyToOne(targetEntity="FosUser")
+     * @ORM\ManyToOne(targetEntity="User")
      * @ORM\JoinColumns({
      *   @ORM\JoinColumn(name="idutilisateur", referencedColumnName="id")
      * })
      */
     private $idutilisateur;
 
-    /**
-     * @var \Doctrine\Common\Collections\Collection
-     *
-     * @ORM\ManyToMany(targetEntity="Role", inversedBy="idpersonne")
-     * @ORM\JoinTable(name="personnerole",
-     *   joinColumns={
-     *     @ORM\JoinColumn(name="idPersonne", referencedColumnName="idutilisateur")
-     *   },
-     *   inverseJoinColumns={
-     *     @ORM\JoinColumn(name="idRole", referencedColumnName="idRole")
-     *   }
-     * )
-     */
-    private $idrole;
 
     /**
      * Constructor

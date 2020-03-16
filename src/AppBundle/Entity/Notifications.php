@@ -39,11 +39,11 @@ class Notifications
     private $idcolis;
 
     /**
-     * @var \Livraison
+     * @var \User
      *
-     * @ORM\ManyToOne(targetEntity="Livraison")
+     * @ORM\ManyToOne(targetEntity="User")
      * @ORM\JoinColumns({
-     *   @ORM\JoinColumn(name="idLivreur", referencedColumnName="idLivreur")
+     *   @ORM\JoinColumn(name="idLivreur", referencedColumnName="id")
      * })
      */
     private $idlivreur;
@@ -59,11 +59,11 @@ class Notifications
     private $idlivraison;
 
     /**
-     * @var \Colis
+     * @var \User
      *
-     * @ORM\ManyToOne(targetEntity="Colis")
+     * @ORM\ManyToOne(targetEntity="User")
      * @ORM\JoinColumns({
-     *   @ORM\JoinColumn(name="idPropC", referencedColumnName="idUtilisateur")
+     *   @ORM\JoinColumn(name="idPropC", referencedColumnName="id")
      * })
      */
     private $idpropc;
