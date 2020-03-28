@@ -1,3 +1,8 @@
+payement:
+    resource: "@PayementBundle/Controller/"
+    type:     annotation
+    prefix:   /payement
+
 app:
     resource: '@AppBundle/Controller/'
     type: annotation
