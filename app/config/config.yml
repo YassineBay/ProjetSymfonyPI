@@ -3,6 +3,7 @@ imports:
     - { resource: security.yml }
     - { resource: services.yml }
     - { resource: "@PayementBundle/Resources/config/services.yml" }
+    - { resource: "@NotificationBundle/Resources/config/services.yml" }
 
 # Put parameters here that don't need to change on each machine where the app is deployed
 # https://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
@@ -84,3 +85,10 @@ fos_user:
     from_email:
         address: "%mailer_user%"
         sender_name: "%mailer_user%"
+
+# NotificationsBundle configuration
+notifications:
+    app_id:     970982
+    app_key:    0eafa05ea6bd6a265585
+    app_secret: ad6a2bf7e706b836b512
+    cluster:    eu

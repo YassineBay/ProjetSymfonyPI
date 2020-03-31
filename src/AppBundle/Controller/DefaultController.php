@@ -18,4 +18,12 @@ class DefaultController extends Controller
             'base_dir' => realpath($this->getParameter('kernel.project_dir')).DIRECTORY_SEPARATOR,
         ]);
     }
+
+    /**
+     * @Route("/chat", name="chat")
+     */
+    public function chatAction(Request $request)
+    {
+        return $this->render("default/chat.html.twig");
+    }
 }

@@ -18,8 +18,10 @@ class AppKernel extends Kernel
             new FOS\UserBundle\FOSUserBundle(),
             //new Flosch\Bundle\StripeBundle\FloschStripeBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
+            new SBC\NotificationsBundle\NotificationsBundle(),
             new AppBundle\AppBundle(),
             new PayementBundle\PayementBundle(),
+            new NotificationBundle\NotificationBundle(),
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {

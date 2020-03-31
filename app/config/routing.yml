@@ -1,3 +1,8 @@
+notification:
+    resource: "@NotificationBundle/Controller/"
+    type:     annotation
+    prefix:   /notif
+
 payement:
     resource: "@PayementBundle/Controller/"
     type:     annotation

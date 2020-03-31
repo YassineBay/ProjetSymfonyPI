@@ -3,6 +3,9 @@
 namespace PayementBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use SBC\NotificationsBundle\Builder\NotificationBuilder;
+use SBC\NotificationsBundle\Model\NotifiableInterface;
+use AppBundle\Entity\Notifications;
 
 /**
  * Customer
@@ -10,7 +13,7 @@ use Doctrine\ORM\Mapping as ORM;
  * @ORM\Table(name="customer")
  * @ORM\Entity
  */
-class Customer
+class Customer implements NotifiableInterface
 {
     /**
      * @var string
@@ -105,7 +108,26 @@ class Customer
         $this->datecreation = $datecreation;
     }
 
+    public function notificationsOnCreate(NotificationBuilder $builder)
+    {
+        $notification = new Notifications();
+        $notification->setTitle("new customer")
+            ->setDescription("$this->fullname")
+            ->setRoute('show')
+            ->setParameters(array('id'=>$this->id));
+        $builder->addNotification($notification);
+        return $builder;
+    }
 
+    public function notificationsOnUpdate(NotificationBuilder $builder)
+    {
+        // TODO: Implement notificationsOnUpdate() method.
+    }
+
+    public function notificationsOnDelete(NotificationBuilder $builder)
+    {
+        // TODO: Implement notificationsOnDelete() method.
+    }
 
 
 }
