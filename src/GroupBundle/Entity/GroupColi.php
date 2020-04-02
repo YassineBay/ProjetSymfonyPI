@@ -1,6 +1,6 @@
 <?php
 
-namespace AppBundle\Entity;
+namespace GroupBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
@@ -73,7 +73,7 @@ class GroupColi
     /**
      * @var \FosUser
      *
-     * @ORM\ManyToOne(targetEntity="AppBundle/User")
+     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\User")
      * @ORM\JoinColumns({
      *   @ORM\JoinColumn(name="id_util", referencedColumnName="id")
      * })

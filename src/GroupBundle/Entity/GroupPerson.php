@@ -1,6 +1,6 @@
 <?php
 
-namespace AppBundle\Entity;
+namespace GroupBundle\Entity;
 
 use AppBundle\AppBundle;
 use Doctrine\ORM\Mapping as ORM;
@@ -32,7 +32,7 @@ class GroupPerson
     /**
      * @var AppBundle/User
      *
-     * @ORM\ManyToOne(targetEntity="AppBundle/User")
+     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\User")
      * @ORM\JoinColumns({
      *   @ORM\JoinColumn(name="id_utilisateur", referencedColumnName="id")
      * })

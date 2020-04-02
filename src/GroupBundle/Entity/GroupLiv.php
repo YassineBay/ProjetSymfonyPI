@@ -1,6 +1,6 @@
 <?php
 
-namespace AppBundle\Entity;
+namespace GroupBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
@@ -45,7 +45,7 @@ class GroupLiv
     /**
      * @var AppBundle/User
      *
-     * @ORM\ManyToOne(targetEntity="AppBundle/User")
+     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\User")
      * @ORM\JoinColumns({
      *   @ORM\JoinColumn(name="id_admin", referencedColumnName="id")
      * })

@@ -1,0 +1,15 @@
+<table border="2">
+    <tr>
+       <th>Name</th>
+       <th>Destination</th>
+       <th>Rating</th>
+    </tr>
+
+    {% for g in group %}
+        <tr>
+            <th>{{g.name}}</th>
+            <th>{{g.destination}}</th>
+            <th>{{g.rating}}</th>
+        </tr>
+    {% endfor %}
+</table>

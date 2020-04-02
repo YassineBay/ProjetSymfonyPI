@@ -1,7 +1,7 @@
 group:
     resource: "@GroupBundle/Controller/"
     type:     annotation
-    prefix:   /
+    prefix:   /group
 
 notification:
     resource: "@NotificationBundle/Controller/"
