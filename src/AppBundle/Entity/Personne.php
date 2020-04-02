@@ -57,23 +57,15 @@ class Personne
     private $image;
 
     /**
-     * @var \User
+     * @var \FosUser
      *
-     * @ORM\ManyToOne(targetEntity="User")
+     * @ORM\ManyToOne(targetEntity="FosUser")
      * @ORM\JoinColumns({
      *   @ORM\JoinColumn(name="idutilisateur", referencedColumnName="id")
      * })
      */
     private $idutilisateur;
 
-
-    /**
-     * Constructor
-     */
-    public function __construct()
-    {
-        $this->idrole = new \Doctrine\Common\Collections\ArrayCollection();
-    }
 
 }
 

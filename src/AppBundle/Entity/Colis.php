@@ -7,7 +7,7 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * Colis
  *
- * @ORM\Table(name="colis", indexes={@ORM\Index(name="AddingForeinfKeywhatever", columns={"idutilisateur"})})
+ * @ORM\Table(name="colis", indexes={@ORM\Index(name="AddingForeinfKeywhatever", columns={"idUtilisateur"})})
  * @ORM\Entity
  */
 class Colis
@@ -40,7 +40,7 @@ class Colis
      *
      * @ORM\Column(name="date_limit", type="string", length=255, nullable=true)
      */
-    private $dateLimit;
+    private $dateLimit = 'NULL';
 
     /**
      * @var string
@@ -68,12 +68,12 @@ class Colis
      *
      * @ORM\Column(name="reward", type="float", precision=10, scale=0, nullable=true)
      */
-    private $reward;
+    private $reward = 'NULL';
 
     /**
-     * @var \User
+     * @var \FosUser
      *
-     * @ORM\ManyToOne(targetEntity="User")
+     * @ORM\ManyToOne(targetEntity="FosUser")
      * @ORM\JoinColumns({
      *   @ORM\JoinColumn(name="idUtilisateur", referencedColumnName="id")
      * })

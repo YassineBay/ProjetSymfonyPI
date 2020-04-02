@@ -54,7 +54,7 @@ class Element
      *
      * @ORM\Column(name="image", type="text", length=65535, nullable=true)
      */
-    private $image;
+    private $image = 'NULL';
 
 
 }

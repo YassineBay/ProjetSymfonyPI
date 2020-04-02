@@ -22,6 +22,7 @@ class AppKernel extends Kernel
             new AppBundle\AppBundle(),
             new PayementBundle\PayementBundle(),
             new NotificationBundle\NotificationBundle(),
+            new GroupBundle\GroupBundle(),
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {

@@ -54,7 +54,7 @@ class Transactions
      *
      * @ORM\Column(name="created_at", type="datetime", nullable=false)
      */
-    private $createdAt = 'CURRENT_TIMESTAMP';
+    private $createdAt;
 
     /**
      * @var \Customer

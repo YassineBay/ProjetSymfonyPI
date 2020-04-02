@@ -54,12 +54,12 @@ class Livraison
      *
      * @ORM\Column(name="note_livraison", type="integer", nullable=true)
      */
-    private $noteLivraison;
+    private $noteLivraison = 'NULL';
 
     /**
-     * @var \User
+     * @var \FosUser
      *
-     * @ORM\ManyToOne(targetEntity="User")
+     * @ORM\ManyToOne(targetEntity="FosUser")
      * @ORM\JoinColumns({
      *   @ORM\JoinColumn(name="idLivreur", referencedColumnName="id")
      * })
