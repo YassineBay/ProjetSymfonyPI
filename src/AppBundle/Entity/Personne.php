@@ -9,6 +9,7 @@ use Doctrine\ORM\Mapping as ORM;
  *
  * @ORM\Table(name="personne", indexes={@ORM\Index(name="add_frieng_key", columns={"idutilisateur"})})
  * @ORM\Entity
+ * @ORM\Entity(repositoryClass="AppBundle\Repository\PersonneRepository")
  */
 class Personne
 {
@@ -57,14 +58,126 @@ class Personne
     private $image;
 
     /**
-     * @var \FosUser
+     * @var \User
      *
-     * @ORM\ManyToOne(targetEntity="FosUser")
+     * @ORM\ManyToOne(targetEntity="User")
      * @ORM\JoinColumns({
      *   @ORM\JoinColumn(name="idutilisateur", referencedColumnName="id")
      * })
      */
     private $idutilisateur;
+
+    /**
+     * @return int
+     */
+    public function getCin()
+    {
+        return $this->cin;
+    }
+
+    /**
+     * @param int $cin
+     */
+    public function setCin($cin)
+    {
+        $this->cin = $cin;
+    }
+
+    /**
+     * @return string
+     */
+    public function getNom()
+    {
+        return $this->nom;
+    }
+
+    /**
+     * @param string $nom
+     */
+    public function setNom($nom)
+    {
+        $this->nom = $nom;
+    }
+
+    /**
+     * @return string
+     */
+    public function getPrenom()
+    {
+        return $this->prenom;
+    }
+
+    /**
+     * @param string $prenom
+     */
+    public function setPrenom($prenom)
+    {
+        $this->prenom = $prenom;
+    }
+
+    /**
+     * @return int
+     */
+    public function getNumtel()
+    {
+        return $this->numtel;
+    }
+
+    /**
+     * @param int $numtel
+     */
+    public function setNumtel($numtel)
+    {
+        $this->numtel = $numtel;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSexe()
+    {
+        return $this->sexe;
+    }
+
+    /**
+     * @param string $sexe
+     */
+    public function setSexe($sexe)
+    {
+        $this->sexe = $sexe;
+    }
+
+    /**
+     * @return string
+     */
+    public function getImage()
+    {
+        return $this->image;
+    }
+
+    /**
+     * @param string $image
+     */
+    public function setImage($image)
+    {
+        $this->image = $image;
+    }
+
+    /**
+     * @return \User
+     */
+    public function getIdutilisateur()
+    {
+        return $this->idutilisateur;
+    }
+
+    /**
+     * @param \User $idutilisateur
+     */
+    public function setIdutilisateur($idutilisateur)
+    {
+        $this->idutilisateur = $idutilisateur;
+    }
 
 
 }

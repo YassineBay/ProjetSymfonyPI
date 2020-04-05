@@ -9,7 +9,9 @@ use Doctrine\ORM\Mapping as ORM;
  *
  * @ORM\Table(name="rate", indexes={@ORM\Index(name="user_id", columns={"user_id"}), @ORM\Index(name="group_id", columns={"group_id"})})
  * @ORM\Entity
+ * @ORM\Entity(repositoryClass="GroupBundle\Repository\RateRepository")
  */
+
 class Rate
 {
     /**
@@ -46,9 +48,9 @@ class Rate
     private $group;
 
     /**
-     * @var \FosUser
+     * @var AppBundle\User
      *
-     * @ORM\ManyToOne(targetEntity="AppBundle/User")
+     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\User")
      * @ORM\JoinColumns({
      *   @ORM\JoinColumn(name="user_id", referencedColumnName="id")
      * })
@@ -120,7 +122,7 @@ class Rate
     }
 
     /**
-     * @return \FosUser
+     * @return AppBundle\Entity\User
      */
     public function getUser()
     {

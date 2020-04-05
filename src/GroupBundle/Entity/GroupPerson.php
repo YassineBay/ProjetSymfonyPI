@@ -10,6 +10,7 @@ use Doctrine\ORM\Mapping as ORM;
  *
  * @ORM\Table(name="group_person", indexes={@ORM\Index(name="id_group", columns={"id_group"}), @ORM\Index(name="id_utilisateur", columns={"id_utilisateur"})})
  * @ORM\Entity
+ * @ORM\Entity(repositoryClass="GroupBundle\Repository\GroupPersonRepository")
  */
 class GroupPerson
 {

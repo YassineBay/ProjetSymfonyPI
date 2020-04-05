@@ -1,0 +1,10 @@
+{{ group.name }}
+{{ rate }}
+
+
+
+{% for m in members %}
+    <h2>{{ m.username }}</h2>
+    <h2>{{ m.email }}</h2>
+    <h2>{{ m.lastLogin|date('Y-m-d') }}</h2>
+{% endfor %}

@@ -73,7 +73,7 @@ class Colis
     /**
      * @var \FosUser
      *
-     * @ORM\ManyToOne(targetEntity="FosUser")
+     * @ORM\ManyToOne(targetEntity="User")
      * @ORM\JoinColumns({
      *   @ORM\JoinColumn(name="idUtilisateur", referencedColumnName="id")
      * })

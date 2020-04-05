@@ -59,7 +59,7 @@ class Livraison
     /**
      * @var \FosUser
      *
-     * @ORM\ManyToOne(targetEntity="FosUser")
+     * @ORM\ManyToOne(targetEntity="User")
      * @ORM\JoinColumns({
      *   @ORM\JoinColumn(name="idLivreur", referencedColumnName="id")
      * })

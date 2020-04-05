@@ -9,6 +9,7 @@ use Doctrine\ORM\Mapping as ORM;
  *
  * @ORM\Table(name="group_coli", indexes={@ORM\Index(name="id_group", columns={"id_group"}), @ORM\Index(name="id_coli", columns={"id_coli"}), @ORM\Index(name="id_util", columns={"id_util"})})
  * @ORM\Entity
+ * @ORM\Entity(repositoryClass="GroupBundle\Repository\GroupColiRepository")
  */
 class GroupColi
 {

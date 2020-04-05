@@ -9,6 +9,7 @@ use Doctrine\ORM\Mapping as ORM;
  *
  * @ORM\Table(name="group_liv", indexes={@ORM\Index(name="id_admin", columns={"id_admin"})})
  * @ORM\Entity
+ * @ORM\Entity(repositoryClass="GroupBundle\Repository\GroupLivRepository")
  */
 class GroupLiv
 {

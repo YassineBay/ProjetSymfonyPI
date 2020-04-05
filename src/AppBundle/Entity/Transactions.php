@@ -57,9 +57,9 @@ class Transactions
     private $createdAt;
 
     /**
-     * @var \Customer
+     * @var PayementBundle\Entity\Customer
      *
-     * @ORM\ManyToOne(targetEntity="Customer")
+     * @ORM\ManyToOne(targetEntity="PayementBundle\Entity\Customer")
      * @ORM\JoinColumns({
      *   @ORM\JoinColumn(name="id_costumer", referencedColumnName="id")
      * })

@@ -13,7 +13,7 @@ class GroupLivType extends AbstractType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('name')->add('destination')->add('rating')->add('idAdmin');
+        $builder->add('name')->add('destination');
     }/**
      * {@inheritdoc}
      */

@@ -3,6 +3,8 @@
        <th>Name</th>
        <th>Destination</th>
        <th>Rating</th>
+       <th>Details</th>
+       <th>Join</th>
     </tr>
 
     {% for g in group %}
@@ -10,6 +12,14 @@
             <th>{{g.name}}</th>
             <th>{{g.destination}}</th>
             <th>{{g.rating}}</th>
+            <th>
+                <a href="{{ path("details", {"id":g.idGroup}) }}">
+                    <button>Details</button>
+                </a>
+            </th>
+            <th>
+                <button>Join</button>
+            </th>
         </tr>
     {% endfor %}
 </table>
