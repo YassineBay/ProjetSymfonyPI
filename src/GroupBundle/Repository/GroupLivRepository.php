@@ -5,6 +5,7 @@ namespace GroupBundle\Repository;
 
 use AppBundle\Entity\Personne;
 use Doctrine\ORM\EntityRepository;
+use FOS\UserBundle\Model\Group;
 use GroupBundle\Entity\GroupLiv;
 
 class GroupLivRepository extends EntityRepository{
@@ -24,6 +25,7 @@ class GroupLivRepository extends EntityRepository{
     public function getGrpMembers($id){
        # $this->getEntityManager()->getRepository(Personne::class)->
     }
+
 
 
 }

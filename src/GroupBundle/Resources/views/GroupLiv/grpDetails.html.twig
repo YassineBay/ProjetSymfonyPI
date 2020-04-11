@@ -1,10 +1,15 @@
-{{ group.name }}
-{{ rate }}
+<h2>{{ group.name }}</h2>
+<h3>rate : {{ rate }}</h3>
 
+<a href="{{ path("leave",{"gid":group.idgroup}) }}">
+    <button>
+        Leave this group
+    </button>
+</a>
 
-
-{% for m in members %}
-    <h2>{{ m.username }}</h2>
-    <h2>{{ m.email }}</h2>
-    <h2>{{ m.lastLogin|date('Y-m-d') }}</h2>
-{% endfor %}
+<h4>Members list</h4>
+    <ul>
+        {% for m in members %}
+           <li>name : {{ m.username }} | email : {{ m.email }} | member since : {{ m.lastLogin|date('Y-m-d') }}</li>
+        {% endfor %}
+    </ul>

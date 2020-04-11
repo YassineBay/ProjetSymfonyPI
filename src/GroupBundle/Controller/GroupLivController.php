@@ -14,10 +14,25 @@ use Symfony\Component\HttpFoundation\Request;
 class GroupLivController extends Controller
 {
     /**
-     * @Route("/show")
+     * @Route("/show", name="show_groups")
      */
-    public function showAction()
+    public function showAction(Request $request)
     {
+
+        $groupl = new GroupLiv();
+        $etat = $this->getDoctrine()->getManager()->getRepository(User::class)->find($this->container->get('security.token_storage')->getToken()->getUser());
+        $groupl->setIdAdmin($etat);
+
+        $form= $this->createForm('GroupBundle\Form\GroupLivType', $groupl);
+        $form->handleRequest($request);
+
+        if($form->isValid() && $form->isSubmitted() ){
+            $em =$this->getDoctrine()->getManager();
+            $em->persist($groupl);
+            $em->flush();
+            $groupl = new GroupLiv();
+                    }
+
         #get all the groups
         $group = $this->getDoctrine()->getRepository(GroupLiv::class)->showGrpLiv();
 
@@ -31,9 +46,7 @@ class GroupLivController extends Controller
             $group[$i]->setRating($avg);
         }
 
-        return $this->render('@Group/GroupLiv/show.html.twig', ["group" => $group]);
-
-    #}
+        return $this->render('@Group/GroupLiv/show1.html.twig', ["group" => $group, "form"=>$form->createView()]);
 
     }
 
@@ -103,5 +116,6 @@ class GroupLivController extends Controller
         ]);
 
     }
+
 
 }

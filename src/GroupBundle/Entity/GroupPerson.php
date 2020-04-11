@@ -83,7 +83,7 @@ class GroupPerson
     }
 
     /**
-     * @return AppBundle
+     * @return int
      */
     public function getIdUtilisateur()
     {
@@ -112,6 +112,11 @@ class GroupPerson
     public function setIdGroup($idGroup)
     {
         $this->idGroup = $idGroup;
+    }
+
+    public function __toString()
+    {
+        return (String) $this->getIdUtilisateur();
     }
 
 }

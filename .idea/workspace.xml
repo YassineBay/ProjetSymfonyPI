@@ -2,27 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4b9cbe33-f3ba-4319-ada1-8bf3a8b5863f" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/AppBundle/Repository/PersonneRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AppBundle/Repository/UserRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GroupBundle/Repository/GroupColiRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GroupBundle/Repository/GroupLivRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GroupBundle/Repository/GroupPersonRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GroupBundle/Repository/RateRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GroupBundle/Resources/views/GroupLiv/add.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GroupBundle/Resources/views/GroupLiv/grpDetails.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GroupBundle/Resources/views/GroupLiv/show1.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GroupBundle/Resources/views/GroupPerson/join.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/flex-slider.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/font-awesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/templatemo-softy-pinko.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/fithnitek_logo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Colis.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Colis.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Livraison.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Livraison.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Personne.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Personne.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Transactions.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Transactions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AppBundle/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Repository/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Repository/UserRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GroupBundle/Controller/DefaultController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/GroupBundle/Controller/DefaultController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GroupBundle/Controller/GroupLivController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/GroupBundle/Controller/GroupLivController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GroupBundle/Entity/GroupColi.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/GroupBundle/Entity/GroupColi.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GroupBundle/Entity/GroupLiv.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/GroupBundle/Entity/GroupLiv.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GroupBundle/Entity/GroupPerson.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/GroupBundle/Entity/GroupPerson.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GroupBundle/Entity/Rate.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/GroupBundle/Entity/Rate.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GroupBundle/Form/GroupLivType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/GroupBundle/Form/GroupLivType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GroupBundle/Repository/GroupLivRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/GroupBundle/Repository/GroupLivRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GroupBundle/Repository/GroupPersonRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/GroupBundle/Repository/GroupPersonRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GroupBundle/Resources/views/GroupLiv/add.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/GroupBundle/Resources/views/GroupLiv/add.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GroupBundle/Resources/views/GroupLiv/grpDetails.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/GroupBundle/Resources/views/GroupLiv/grpDetails.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GroupBundle/Resources/views/GroupLiv/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/GroupBundle/Resources/views/GroupLiv/show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GroupBundle/Tests/Controller/GroupPersonControllerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/GroupBundle/Tests/Controller/GroupPersonControllerTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/web/.htaccess" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/bootstrap.min.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,10 +162,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Ghassen\Documents\prj\PI\ProjetSymfonyPI\web\img" />
+      <recent name="C:\Users\Ghassen\Documents\prj\PI\ProjetSymfonyPI\web\css" />
       <recent name="C:\Users\Ghassen\Documents\prj\PI\ProjetSymfonyPI\src\GroupBundle\Resources\views" />
       <recent name="C:\Users\Ghassen\Documents\prj\PI\ProjetSymfonyPI\src\GroupBundle\Entity" />
       <recent name="C:\Users\Yassine\PhpstormProjects\SymfonyPI\src\NotificationBundle\Entity" />
-      <recent name="C:\Users\Yassine\PhpstormProjects\SymfonyPI\src\PayementBundle\Entity" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -190,7 +193,10 @@
       <workItem from="1585444196970" duration="892000" />
       <workItem from="1585524941650" duration="9097000" />
       <workItem from="1585661914400" duration="6911000" />
-      <workItem from="1585811422225" duration="58494000" />
+      <workItem from="1585811422225" duration="81353000" />
+      <workItem from="1586368431843" duration="23235000" />
+      <workItem from="1586470136685" duration="15687000" />
+      <workItem from="1586581749127" duration="5778000" />
     </task>
     <servers />
   </component>
@@ -202,28 +208,41 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="23" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1586057694665" />
-    <state x="476" y="81" key="#com.intellij.ide.util.MemberChooser" timestamp="1586058313959">
+    <state x="476" y="81" key="#com.intellij.ide.util.MemberChooser" timestamp="1586154123992">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="476" y="81" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1586058313959" />
-    <state x="413" y="120" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1586050103580">
+    <state x="476" y="81" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1586154123992" />
+    <state x="413" y="120" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1586123458339">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="413" y="120" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1586050103580" />
+    <state x="413" y="120" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1586123458339" />
     <state x="543" y="254" key="NewPhpClassDialog" timestamp="1586055806867">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="543" y="254" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1586055806867" />
-    <state x="339" y="162" key="run.anything.popup" timestamp="1585976434156">
+    <state x="378" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1586582099601">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1585976434156" />
+    <state x="378" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1586582099601" />
+    <state x="339" y="162" key="run.anything.popup" timestamp="1586487648891">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1586487648891" />
+    <state x="346" y="49" key="search.everywhere.popup" timestamp="1586154099649">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1586154099649" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/web/app_dev.php</url>
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/src/GroupBundle/Resources/views/GroupLiv/show1.html.twig</url>
+          <line>2</line>
+          <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

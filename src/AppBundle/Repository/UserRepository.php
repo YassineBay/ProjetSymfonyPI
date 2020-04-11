@@ -20,4 +20,6 @@ class UserRepository extends EntityRepository
 		return $query->getQuery()->getResult();
     }
 
+    #public function findUserByGroupId()
+
 }
