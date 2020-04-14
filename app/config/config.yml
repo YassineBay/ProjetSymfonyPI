@@ -92,3 +92,7 @@ notifications:
     app_key:    0eafa05ea6bd6a265585
     app_secret: ad6a2bf7e706b836b512
     cluster:    eu
+fos_message:
+    db_driver: orm
+    thread_class: AppBundle\Entity\Thread
+    message_class: AppBundle\Entity\Message

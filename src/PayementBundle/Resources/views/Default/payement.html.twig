@@ -5,15 +5,22 @@
          {{ form_start(form, {attr: {id: form.vars.id}}) }}
 <div class="form-group">
     <input type="text" name="first_name" class="form-control mb-3 StripeElement StripeElement--empty" placeholder="First Name">
-    <input type="text" name="last_name" class="form-control mb-3 StripeElement StripeElement--empty" placeholder="Last Name">
-    <div id="card-element" class="form-control"></div>
-    <div id="card-errors" class="help-block" role="alert"></div>
+   <div class="form-group">
+<input type="text" name="last_name" class="form-control mb-3 StripeElement StripeElement--empty" placeholder="Last Name">
 </div>
-{{ form_widget(form.token) }}
-{{ form_end(form) }}
-     </div>
- {% endblock %}
-{% block javascripts %}
+<div class="form-group">
+    <div id="card-element" class="form-control"></div>
+    </div>
+
+<div class="form-group">
+
+    <div id="card-errors" class="help-block" role="alert"></div>
+    </div>
+<div class="form-group">
+    <button type="submit" class="btn btn-primary form-control">Add card</button>
+    </div>
+
+</div>
     <script src="https://js.stripe.com/v3/"></script>
     <script type="text/javascript">
         var form = document.getElementById('{{ form.vars.id }}');
@@ -43,15 +50,12 @@
                 }
             });
         });
-        var style = {
-            base: {
-                fontSize: '20px',
-                color: '#32325d',
-            },
-        };
 
-        document.querySelector("#payment-form_submit").classList="btn btn-primary btn-block mt-4";
     </script>
-{% endblock %}
+{{ form_widget(form.token) }}
+{{ form_end(form) }}
+     </div>
+ {% endblock %}
+
 
 

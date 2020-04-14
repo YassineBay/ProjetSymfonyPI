@@ -3,6 +3,7 @@
 <hr>
 <textarea id="form-message" placeholder="Your public message here"></textarea>
 <input type="button" id="form-submit" value="Send message"/>
+<script src="{{asset('js/require.js')}}"></script>
 
 <script>
     // This object will be sent everytime you submit a message in the sendMessage function.
@@ -17,7 +18,8 @@
      * According to the configuration in Sockets/Chat.php , change the port if you need to.
      * @type WebSocket
      */
-    var conn = new WebSocket('ws://localhost:8000/chat');
+    const server = 'ws://127.0.0.1:80/web/app_dev.php/chatroom/';
+    var conn = new WebSocket(server);
 
     conn.onopen = function(e) {
         console.info("Connection established succesfully");

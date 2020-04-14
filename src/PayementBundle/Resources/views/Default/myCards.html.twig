@@ -1,0 +1,108 @@
+{% extends "base.html.twig" %}
+ {% block body %}
+     <div class="content">
+         <div class="container-fluid">
+             <div class="card">
+                 <center><p class="card-category">
+                         azezae
+                     </p></center>
+                 <div class="card-header">
+                 </div>
+                 <div class="card-body">
+                     <div class="row">
+                         <div class="col-sm-6">
+
+                         <div class="card">
+         <div class="card-header">
+
+         </div>
+         <div class="card-body">
+             {% if test.sources.data[0].brand == "Visa" %}
+                 <center><img src="/img/Payement/visa.png" style="width: 50px;height: 50px;margin-bottom: 20px;"/></center>
+             {% endif %}
+             <center><b>{{ test.name | upper  }}</b></center>
+             <center><b>************4242</b></center>
+             <center>
+                 <button type="button" class="buttonChange" data-toggle="modal" data-target="#MyModal">Change Card</button>
+                 <button type="button" class="buttonDelete" data-toggle="modal" data-target="#MyModalDelete">Remove Card</button>
+             </center>
+         </div>
+
+     </div>
+             </div>
+
+         </div>
+
+
+
+             </div>
+         </div>
+     </div>
+     </div>
+     </div>
+     </div>
+
+
+     <div class="modal" tabindex="-1" role="dialog" id="MyModal">
+         <div class="modal-dialog" role="document">
+             <div class="modal-content">
+                 <div class="modal-header">
+                     <h5 class="modal-title">Modal title</h5>
+                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                         <span aria-hidden="true">&times;</span>
+                     </button>
+                 </div>
+                    // body
+                 <div class="modal-footer">
+                     <button type="button" class="btn btn-primary ">Save changes</button>
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                 </div>
+             </div>
+         </div>
+     </div>
+
+     <div class="modal" tabindex="-1" role="dialog" id="MyModalDelete">
+         <div class="modal-dialog" role="document">
+             <div class="modal-content">
+                 <div class="modal-header">
+                     <h5 class="modal-title"><b style="color: red;">Warning</b></h5>
+                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                         <span aria-hidden="true">&times;</span>
+                     </button>
+                 </div>
+                 <center><b>Are you sure you want to delete this card ?</b></center>
+                 <div class="modal-footer">
+                     <button type="button" class="btn btn-primary ">Yes!</button>
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                 </div>
+             </div>
+         </div>
+     </div>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+          <style>
+         .buttonChange {
+             background-color: #7640B8;
+             border: none;
+             color: white;
+             padding: 15px 32px;
+             text-align: center;
+             text-decoration: none;
+             display: inline-block;
+             font-size: 12px;
+         }
+         .buttonDelete {
+             background-color: #e1010e;
+             border: none;
+             color: white;
+             padding: 15px 32px;
+             text-align: center;
+             text-decoration: none;
+             display: inline-block;
+             font-size: 12px;
+         }
+         </style>
+
+ {% endblock %}

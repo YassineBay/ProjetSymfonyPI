@@ -46,4 +46,7 @@ class Chat implements MessageComponentInterface {
 
         $conn->close();
     }
+
+
+
 }

@@ -20,7 +20,7 @@ class DefaultController extends Controller
     }
 
     /**
-     * @Route("/chat", name="chat")
+     * @Route("/chatroom", name="chatroom")
      */
     public function chatAction(Request $request)
     {

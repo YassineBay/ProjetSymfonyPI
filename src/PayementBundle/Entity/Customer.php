@@ -12,8 +12,9 @@ use AppBundle\Entity\Notifications;
  *
  * @ORM\Table(name="customer")
  * @ORM\Entity
+ * @ORM\Entity(repositoryClass="PayementBundle\Repository\CustomerRepository")
  */
-class Customer implements NotifiableInterface
+class Customer
 {
     /**
      * @var string
@@ -43,6 +44,32 @@ class Customer implements NotifiableInterface
      * @ORM\Column(name="email", type="string", length=255, nullable=false)
      */
     private $email;
+
+    /**
+     * @var \User
+     *
+     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\User")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="idUser", referencedColumnName="id")
+     * })
+     */
+    private $iduser;
+
+    /**
+     * @return \User
+     */
+    public function getIduser()
+    {
+        return $this->iduser;
+    }
+
+    /**
+     * @param \User $iduser
+     */
+    public function setIduser($iduser)
+    {
+        $this->iduser = $iduser;
+    }
 
     /**
      * @return string
@@ -108,26 +135,6 @@ class Customer implements NotifiableInterface
         $this->datecreation = $datecreation;
     }
 
-    public function notificationsOnCreate(NotificationBuilder $builder)
-    {
-        $notification = new Notifications();
-        $notification->setTitle("new customer")
-            ->setDescription("$this->fullname")
-            ->setRoute('show')
-            ->setParameters(array('id'=>$this->id));
-        $builder->addNotification($notification);
-        return $builder;
-    }
-
-    public function notificationsOnUpdate(NotificationBuilder $builder)
-    {
-        // TODO: Implement notificationsOnUpdate() method.
-    }
-
-    public function notificationsOnDelete(NotificationBuilder $builder)
-    {
-        // TODO: Implement notificationsOnDelete() method.
-    }
 
 
 }

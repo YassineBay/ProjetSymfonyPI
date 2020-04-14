@@ -21,6 +21,7 @@ class AppKernel extends Kernel
             new SBC\NotificationsBundle\NotificationsBundle(),
             new AppBundle\AppBundle(),
             new PayementBundle\PayementBundle(),
+            new FOS\MessageBundle\FOSMessageBundle(),
             new NotificationBundle\NotificationBundle(),
         ];
 
