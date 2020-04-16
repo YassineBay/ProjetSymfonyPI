@@ -76,7 +76,7 @@ class GroupPersonController extends Controller{
             #$em->getRepository(GroupPerson::class)->deleteMember($currentUser->getId(),$gid );
             $em->flush();
             #return $this->render('@Group/GroupPerson/show.html.twig');
-            return $this->forward('GroupBundle:GroupLiv:show');
+            return $this->redirect('127.0.0.1:8000/group/show/');
 
         }
 

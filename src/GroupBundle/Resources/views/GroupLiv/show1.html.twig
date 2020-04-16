@@ -1,56 +1,5 @@
 {% extends 'base.html.twig' %}
 {% block css %}
-    <style>
-        .cnt{
-            width: 550px;
-            margin: auto;
-            margin-top: 20px;
-            /*padding: 70px 0;*/
-
-        }
-        .ligne{
-            height: 50px;
-            border: 1px white solid;
-            border-radius: 25px;
-            background-color: #4287f5;
-        }
-
-        ul.my-ul{
-            /*float: left;*/
-            width: 500px;
-            margin: auto;
-            text-align: center;
-            /*list-style: inside;*/
-
-        }
-
-        li.my-li{
-            display: inline-block;
-            /*padding: 10px;*/
-            margin: auto;
-            color: aliceblue;
-            font-size: 15px;
-            font-weight: 500;
-            /*border: 2px black solid; */
-
-
-        }
-
-        #data{
-            background-color: #b3b8ff;
-
-        }
-
-        #data ul.my-ul{
-            /*border: 2px black solid;*/
-        }
-
-        #data li.my-li{
-            color: black;
-            text-align: center;
-        }
-
-    </style>
 {% endblock %}
 {% block NavName %} Groups {% endblock %}
 {% block body %}
@@ -74,14 +23,13 @@
 
                     {{ form_start(form) }}
 
-
-
-
                 </div>
                 <div class="modal-footer">
                     {{ form_widget(form) }}
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="submit" class="btn btn-primary">Save changes</button>
+                    <a href="{{ path("show")}}">
+                    <button type="submit" class="btn btn-primary">Add group</button>
+                    </a>
                     {{ form_end(form) }}
                 </div>
             </div>
@@ -122,6 +70,11 @@
         {% set i = i+1 %}
     {% endfor %}
     </tbody>
+    </table>
+    {# display navigation #}
+    <div class="navigation">
+        {{ knp_pagination_render(group) }}
+    </div>
 
 
 

@@ -22,6 +22,8 @@ class AppKernel extends Kernel
             new AppBundle\AppBundle(),
             new PayementBundle\PayementBundle(),
             new FOS\MessageBundle\FOSMessageBundle(),
+            new GroupBundle\GroupBundle(),
+            new Knp\Bundle\PaginatorBundle\KnpPaginatorBundle(),
             new NotificationBundle\NotificationBundle(),
         ];
 

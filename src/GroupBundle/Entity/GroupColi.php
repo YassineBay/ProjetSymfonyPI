@@ -26,8 +26,10 @@ class GroupColi
      * @var integer
      *
      * @ORM\Column(name="id_coli", type="integer", nullable=false)
+     *
+     * @ORM\GeneratedValue(strategy="IDENTITY")
      */
-    private $idColi;
+    private $idColi = 0;
 
     /**
      * @var \DateTime
@@ -69,7 +71,7 @@ class GroupColi
      *
      * @ORM\Column(name="reward", type="float", precision=10, scale=0, nullable=true)
      */
-    private $reward = 'NULL';
+    private $reward ;
 
     /**
      * @var \FosUser
@@ -220,7 +222,7 @@ class GroupColi
     }
 
     /**
-     * @return \FosUser
+     * @return integer
      */
     public function getIdUtil()
     {
@@ -228,7 +230,7 @@ class GroupColi
     }
 
     /**
-     * @param \FosUser $idUtil
+     * @param integer $idUtil
      */
     public function setIdUtil($idUtil)
     {

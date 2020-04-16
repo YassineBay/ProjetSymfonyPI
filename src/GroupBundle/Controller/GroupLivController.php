@@ -4,6 +4,7 @@ namespace GroupBundle\Controller;
 
 use AppBundle\Entity\Personne;
 use AppBundle\Entity\User;
+use GroupBundle\Entity\GroupColi;
 use GroupBundle\Entity\GroupLiv;
 use GroupBundle\Entity\Rate;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
@@ -14,7 +15,7 @@ use Symfony\Component\HttpFoundation\Request;
 class GroupLivController extends Controller
 {
     /**
-     * @Route("/show", name="show_groups")
+     * @Route("/show/", name="show_groups")
      */
     public function showAction(Request $request)
     {
@@ -30,8 +31,14 @@ class GroupLivController extends Controller
             $em =$this->getDoctrine()->getManager();
             $em->persist($groupl);
             $em->flush();
+
+            unset($groupl);
+            unset($form);
+
             $groupl = new GroupLiv();
-                    }
+            $form = $this->createForm('GroupBundle\Form\GroupLivType', $groupl);
+
+        }
 
         #get all the groups
         $group = $this->getDoctrine()->getRepository(GroupLiv::class)->showGrpLiv();
@@ -46,7 +53,17 @@ class GroupLivController extends Controller
             $group[$i]->setRating($avg);
         }
 
-        return $this->render('@Group/GroupLiv/show1.html.twig', ["group" => $group, "form"=>$form->createView()]);
+        /**
+         * @var $paginator \Knp\Component\Pager\Paginator
+         */
+        $paginator = $this->get('knp_paginator');
+        $result = $paginator->paginate(
+            $group,
+            $request->query->getInt('page',1),
+            $request->query->getInt('limit',5)
+        );
+
+        return $this->render('@Group/GroupLiv/show1.html.twig', ["group" => $result, "form"=>$form->createView()]);
 
     }
 
@@ -69,6 +86,8 @@ class GroupLivController extends Controller
             $em =$this->getDoctrine()->getManager();
             $em->persist($group);
             $em->flush();
+
+
         }
 
         return $this->render("@Group/GroupLiv/add.html.twig", ["form"=>$form->createView()]);
@@ -95,27 +114,84 @@ class GroupLivController extends Controller
 
     }
 
+    public function addColi(Request $request, $GID, $form){
+        $coli = new GroupColi();
+        $toDay = new \DateTime();
+        $toDay->getTimestamp();
+        $coli->setDateAjout($toDay);
+        $coli->setIdGroup($GID);
+        $group = new GroupLiv();
+        $group->setIdGroup($GID);
+
+        $form = $this->createForm('GroupBundle\Form\GroupColiType', $coli);
+        $form->handleRequest($request);
+
+        if($form->isValid() && $form->isSubmitted()){
+            $em = $this->getDoctrine()->getManager();
+            $em->persist($coli);
+            $em->flush();
+
+        }
+    }
+
     /**
      * @Route("/grpDet/{id}", name="details")
      */
 
-    public function grpDetailsAction($id){
+    public function grpDetailsAction(Request $request, $id)
+    {
 
         $em = $this->getDoctrine()->getManager();
         $group = $em->getRepository(GroupLiv::class)->find($id);
 
         $rate = $em->getRepository(Rate::class)->getGrpRate($id);
-        $users = $em->getRepository(User::class)->showMembers($id);
+        $users = $em->getRepository(User::class)->findByid($id);
+
+        $parcel = $em->getRepository(GroupColi::class)->getColi($id);
 
         $avg = $this->calcRate($rate);
 
+        /**
+         * @var $paginator \Knp\Component\Pager\Paginator
+         */
+        $paginator = $this->get('knp_paginator');
+        $result = $paginator->paginate(
+            $users,
+            $request->query->getInt('page', 1),
+            $request->query->getInt('limit', 5)
+        );
+
+        $coli = new GroupColi();
+        $toDay = new \DateTime();
+        $toDay->getTimestamp();
+        $coli->setDateAjout($toDay);
+        $coli->setIdGroup($group);
+        $currentUser = $em->getRepository(User::class)->find($this->container->get('security.token_storage')->getToken()->getUser());
+        $coli->setIdUtil($currentUser);
+        #$group = new GroupLiv();
+        $group->setIdGroup($id);
+
+        $form = $this->createForm('GroupBundle\Form\GroupColiType', $coli);
+        $form->handleRequest($request);
+
+        if ($form->isValid() && $form->isSubmitted()) {
+            $em = $this->getDoctrine()->getManager();
+            $em->persist($coli);
+            $em->flush();
+
+            unset($coli);
+            unset($form);
+
+            $coli = new GroupColi();
+            $form = $this->createForm('GroupBundle\Form\GroupColiType', $coli);
+        }
+
         return $this->render("@Group/GroupLiv/grpDetails.html.twig", [
-            "group"=>$group,
-            "rate"=>$avg,
-            "members"=>$users
+            "group" => $group,
+            "rate" => $avg,
+            "members" => $result,
+            "coli" => $parcel,
+            "formP" => $form->createView()
         ]);
-
     }
-
-
 }

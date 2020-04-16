@@ -1,3 +1,8 @@
+group:
+    resource: "@GroupBundle/Controller/"
+    type:     annotation
+    prefix:   /group
+
 notification:
     resource: "@NotificationBundle/Controller/"
     type:     annotation
@@ -13,7 +18,6 @@ app:
     type: annotation
 fos_user:
     resource: "@FOSUserBundle/Resources/config/routing/all.xml"
-
 fos_message:
     resource: "@FOSMessageBundle/Resources/config/routing.xml"
     prefix: /messanger
