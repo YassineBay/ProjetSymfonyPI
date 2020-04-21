@@ -2,73 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4b9cbe33-f3ba-4319-ada1-8bf3a8b5863f" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/SymfonyPI.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SymfonyPI.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/AppKernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/AppKernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config/routing.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/routing.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Repository/PersonneRepository.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Repository/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Repository/UserRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GroupBundle/Controller/DefaultController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/GroupBundle/Controller/DefaultController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GroupBundle/Controller/GroupLivController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/GroupBundle/Controller/GroupLivController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GroupBundle/Controller/GroupPersonController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/GroupBundle/Controller/GroupPersonController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GroupBundle/Entity/GroupColi.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/GroupBundle/Entity/GroupColi.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GroupBundle/Entity/GroupLiv.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/GroupBundle/Entity/GroupLiv.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GroupBundle/Entity/GroupPerson.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/GroupBundle/Entity/GroupPerson.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GroupBundle/Entity/Rate.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/GroupBundle/Entity/Rate.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GroupBundle/Form/GroupLivType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/GroupBundle/Form/GroupLivType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GroupBundle/GroupBundle.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/GroupBundle/GroupBundle.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GroupBundle/Repository/GroupColiRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/GroupBundle/Repository/GroupColiRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GroupBundle/Resources/config/services.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/GroupBundle/Resources/config/services.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GroupBundle/Resources/views/Default/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/GroupBundle/Resources/views/Default/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GroupBundle/Resources/views/GroupLiv/grpDetails.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/GroupBundle/Resources/views/GroupLiv/grpDetails.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GroupBundle/Resources/views/GroupLiv/show1.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/GroupBundle/Resources/views/GroupLiv/show1.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GroupBundle/Tests/Controller/GroupLivControllerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/GroupBundle/Tests/Controller/GroupLivControllerTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GroupBundle/Tests/Controller/GroupPersonControllerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/GroupBundle/Tests/Controller/GroupPersonControllerTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/css/demo.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/demo.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/css/flex-slider.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/flex-slider.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/css/font-awesome.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/font-awesome.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/css/light-bootstrap-dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/light-bootstrap-dashboard.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/css/templatemo-softy-pinko.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/templatemo-softy-pinko.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sass/lbd/_alerts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/sass/lbd/_alerts.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sass/lbd/_bootstrap-switch.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/sass/lbd/_bootstrap-switch.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sass/lbd/_buttons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/sass/lbd/_buttons.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sass/lbd/_cards.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/sass/lbd/_cards.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sass/lbd/_chartist.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/sass/lbd/_chartist.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sass/lbd/_checkbox-radio-switch.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/sass/lbd/_checkbox-radio-switch.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sass/lbd/_dropdown.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/sass/lbd/_dropdown.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sass/lbd/_footers.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/sass/lbd/_footers.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sass/lbd/_inputs.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/sass/lbd/_inputs.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sass/lbd/_misc.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/sass/lbd/_misc.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sass/lbd/_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/sass/lbd/_mixins.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sass/lbd/_navbars.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/sass/lbd/_navbars.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sass/lbd/_partial-nucleo-icons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/sass/lbd/_partial-nucleo-icons.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sass/lbd/_responsive.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/sass/lbd/_responsive.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sass/lbd/_sidebar-and-main-panel.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/sass/lbd/_sidebar-and-main-panel.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sass/lbd/_tables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/sass/lbd/_tables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sass/lbd/_typography.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/sass/lbd/_typography.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sass/lbd/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/sass/lbd/_variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sass/lbd/mixins/_buttons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/sass/lbd/mixins/_buttons.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sass/lbd/mixins/_cards.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/sass/lbd/mixins/_cards.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sass/lbd/mixins/_chartist.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/sass/lbd/mixins/_chartist.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sass/lbd/mixins/_icons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/sass/lbd/mixins/_icons.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sass/lbd/mixins/_inputs.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/sass/lbd/mixins/_inputs.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sass/lbd/mixins/_labels.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/sass/lbd/mixins/_labels.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sass/lbd/mixins/_morphing-buttons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/sass/lbd/mixins/_morphing-buttons.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sass/lbd/mixins/_navbars.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/sass/lbd/mixins/_navbars.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sass/lbd/mixins/_social-buttons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/sass/lbd/mixins/_social-buttons.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sass/lbd/mixins/_tabs.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/sass/lbd/mixins/_tabs.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sass/lbd/mixins/_transparency.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/sass/lbd/mixins/_transparency.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sass/lbd/mixins/_vendor-prefixes.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/sass/lbd/mixins/_vendor-prefixes.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sass/lbd/plugins/_animate.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/sass/lbd/plugins/_animate.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sass/lbd/plugins/_datetime-picker.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/sass/lbd/plugins/_datetime-picker.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sass/light-bootstrap-dashboard.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/sass/light-bootstrap-dashboard.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Colis.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Colis.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PayementBundle/Controller/DefaultController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/PayementBundle/Controller/DefaultController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PayementBundle/Resources/views/Default/myCards.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/PayementBundle/Resources/views/Default/myCards.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PayementBundle/Resources/views/Default/payement.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/PayementBundle/Resources/views/Default/payement.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -83,11 +22,82 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="base.html.twig" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
+      <file leaf-file-name="myCards.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/PayementBundle/Resources/views/Default/myCards.html.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
-              <caret line="22" lean-forward="true" selection-end-line="169" />
+              <caret line="130" column="112" selection-start-line="130" selection-start-column="112" selection-end-line="130" selection-end-column="112" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="search.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Resources/FOSMessageBundle/views/Message/search.html.twig">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="Customer.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/PayementBundle/Entity/Customer.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="76" column="25" selection-start-line="76" selection-start-column="20" selection-end-line="76" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CustomerRepository.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/PayementBundle/Repository/CustomerRepository.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DefaultController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/PayementBundle/Controller/DefaultController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="366">
+              <caret line="91" lean-forward="true" selection-start-line="91" selection-end-line="91" />
+              <folding>
+                <element signature="e#45#72#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Colis.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Colis.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="448">
+              <caret line="227" lean-forward="true" selection-start-line="227" selection-end-line="227" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Customer.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/stripe/stripe-php/lib/Customer.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-321">
+              <caret line="142" column="52" selection-start-line="142" selection-start-column="48" selection-end-line="142" selection-end-column="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Charge.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/stripe/stripe-php/lib/Charge.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1373">
+              <caret line="5" column="15" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="payement.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/PayementBundle/Resources/views/Default/payement.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="20" column="104" selection-start-line="20" selection-start-column="104" selection-end-line="20" selection-end-column="104" />
             </state>
           </provider>
         </entry>
@@ -107,13 +117,18 @@
       <find>&lt;i</find>
       <find>notific</find>
       <find>acco</find>
-      <find>Log oy</find>
+      <find />
       <find>custome</find>
       <find>toke</find>
       <find>getId</find>
       <find>showshow_groups</find>
       <find>showM</find>
       <find>idUt</find>
+      <find>Add</find>
+      <find>token</find>
+      <find>test.id</find>
+      <find>char</find>
+      <find>charge</find>
     </findStrings>
   </component>
   <component name="FrameworkCommandLineHistory">
@@ -146,16 +161,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Dummy.txt" root0="SKIP_INSPECTION" />
-  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/FosUser.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/Livraison.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Entity/Colis.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/Personne.php" />
         <option value="$PROJECT_DIR$/app/config/security.yml" />
         <option value="$PROJECT_DIR$/web/app.php" />
@@ -180,13 +191,9 @@
         <option value="$PROJECT_DIR$/src/AppBundle/Sockets/Chat.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Command/SocketCommand.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/default/chat.html.twig" />
-        <option value="$PROJECT_DIR$/app/config/parameters.yml" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/User.php" />
         <option value="$PROJECT_DIR$/src/PayementBundle/Entity/Customer.php" />
         <option value="$PROJECT_DIR$/src/PayementBundle/Repository/CustomerRepository.php" />
-        <option value="$PROJECT_DIR$/src/PayementBundle/Controller/DefaultController.php" />
-        <option value="$PROJECT_DIR$/src/PayementBundle/Resources/views/Default/myCards.html.twig" />
-        <option value="$PROJECT_DIR$/src/PayementBundle/Resources/views/Default/payement.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/app/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/GroupBundle/Entity/GroupPerson.php" />
@@ -198,6 +205,11 @@
         <option value="$PROJECT_DIR$/src/GroupBundle/Repository/GroupColiRepository.php" />
         <option value="$PROJECT_DIR$/src/GroupBundle/Controller/GroupLivController.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
+        <option value="$PROJECT_DIR$/app/config/parameters.yml" />
+        <option value="$PROJECT_DIR$/src/PayementBundle/Resources/views/Default/myCards.html.twig" />
+        <option value="$PROJECT_DIR$/src/PayementBundle/Resources/views/Default/payement.html.twig" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Entity/Colis.php" />
+        <option value="$PROJECT_DIR$/src/PayementBundle/Controller/DefaultController.php" />
       </list>
     </option>
   </component>
@@ -278,10 +290,11 @@
       <path value="$PROJECT_DIR$/vendor/knplabs/knp-components" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="676" />
-    <option name="width" value="697" />
-    <option name="height" value="735" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -313,13 +326,73 @@
             <path>
               <item name="SymfonyPI" type="b2602c69:ProjectViewProjectNode" />
               <item name="SymfonyPI" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SymfonyPI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SymfonyPI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="AppBundle" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SymfonyPI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SymfonyPI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="NotificationBundle" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SymfonyPI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SymfonyPI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="NotificationBundle" type="462c0819:PsiDirectoryNode" />
+              <item name="Controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SymfonyPI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SymfonyPI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="PayementBundle" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SymfonyPI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SymfonyPI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="PayementBundle" type="462c0819:PsiDirectoryNode" />
+              <item name="Client" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SymfonyPI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SymfonyPI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="PayementBundle" type="462c0819:PsiDirectoryNode" />
+              <item name="Controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SymfonyPI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SymfonyPI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="PayementBundle" type="462c0819:PsiDirectoryNode" />
+              <item name="Entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SymfonyPI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SymfonyPI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="PayementBundle" type="462c0819:PsiDirectoryNode" />
+              <item name="Repository" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SymfonyPI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SymfonyPI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="PayementBundle" type="462c0819:PsiDirectoryNode" />
               <item name="Resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SymfonyPI" type="b2602c69:ProjectViewProjectNode" />
               <item name="SymfonyPI" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="PayementBundle" type="462c0819:PsiDirectoryNode" />
               <item name="Resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -327,30 +400,36 @@
               <item name="SymfonyPI" type="b2602c69:ProjectViewProjectNode" />
               <item name="SymfonyPI" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="PayementBundle" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="Default" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SymfonyPI" type="b2602c69:ProjectViewProjectNode" />
               <item name="SymfonyPI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="AppBundle" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SymfonyPI" type="b2602c69:ProjectViewProjectNode" />
               <item name="SymfonyPI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="AppBundle" type="462c0819:PsiDirectoryNode" />
-              <item name="Repository" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="stripe" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SymfonyPI" type="b2602c69:ProjectViewProjectNode" />
               <item name="SymfonyPI" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="stripe" type="462c0819:PsiDirectoryNode" />
+              <item name="stripe-php" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SymfonyPI" type="b2602c69:ProjectViewProjectNode" />
               <item name="SymfonyPI" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="sass" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="stripe" type="462c0819:PsiDirectoryNode" />
+              <item name="stripe-php" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -413,34 +492,38 @@
       <workItem from="1585661914400" duration="10341000" />
       <workItem from="1585729700145" duration="4140000" />
       <workItem from="1586624054464" duration="27341000" />
-      <workItem from="1586941500093" duration="9271000" />
+      <workItem from="1586941500093" duration="9972000" />
+      <workItem from="1587131926412" duration="9948000" />
+      <workItem from="1587155333703" duration="3167000" />
+      <workItem from="1587287040769" duration="5428000" />
+      <workItem from="1587482086306" duration="1182000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99095000" />
+    <option name="totallyTimeSpent" value="119521000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2635432" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5014641" side_tool="true" weight="0.2992126" />
-      <window_info anchor="bottom" id="Command Line Tools Console" order="11" sideWeight="0.4956076" visible="true" weight="0.2992126" />
+      <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49926794" weight="0.32913387" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3298791" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2635432" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3298791" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Command Line Tools Console" order="11" sideWeight="0.4956076" visible="true" weight="0.2992126" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49853587" weight="0.32913387" />
@@ -463,54 +546,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/MessageMetadata.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-          <folding>
-            <element signature="e#80#112#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/ThreadMetadata.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="34" column="1" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
-          <folding>
-            <element signature="e#79#111#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/cboden/ratchet/src/Ratchet/ConnectionInterface.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="3" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Command/SocketCommand.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Sockets/Chat.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/default/chat.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../bitnami.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -534,13 +569,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/NotificationBundle/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="110" selection-start-line="17" selection-start-column="101" selection-end-line="17" selection-end-column="110" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/NotificationBundle/NotificationBundle.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -548,13 +576,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="311">
           <caret line="64" column="17" selection-start-line="61" selection-start-column="2" selection-end-line="69" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -579,27 +600,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/stripe/stripe-php/lib/ExternalAccount.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="930">
-          <caret line="66" column="5" selection-start-line="66" selection-start-column="4" selection-end-line="66" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/stripe/stripe-php/lib/Customer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="87" column="15" selection-start-line="87" selection-start-column="15" selection-end-line="87" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PayementBundle/Entity/Customer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="68" column="29" selection-start-line="68" selection-start-column="20" selection-end-line="68" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/stripe/stripe-php/lib/CountrySpec.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -608,50 +608,15 @@
         <state relative-caret-position="-1002" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/PayementBundle/Repository/CustomerRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/stripe/stripe-php/lib/Account.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-817" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/stripe/stripe-php/lib/Card.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PayementBundle/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="39" column="82" selection-start-line="39" selection-start-column="82" selection-end-line="39" selection-end-column="82" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/NotificationBundle/Resources/views/Default/showNotif.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="23" selection-start-line="9" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PayementBundle/Resources/views/Default/myCards.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="28" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PayementBundle/Resources/views/Default/payement.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="33" selection-start-line="1" selection-start-column="33" selection-end-line="1" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -679,9 +644,7 @@
     <entry file="file://$PROJECT_DIR$/src/GroupBundle/Controller/DefaultController.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Repository/PersonneRepository.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Repository/PersonneRepository.php" />
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/User.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -705,16 +668,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="121">
           <caret line="29" column="49" selection-start-line="29" selection-start-column="49" selection-end-line="29" selection-end-column="49" />
-          <folding>
-            <element signature="e#805#812#1#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="109" column="8" selection-start-line="109" selection-start-column="8" selection-end-line="109" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -755,9 +708,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="17" column="35" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="41" />
-          <folding>
-            <element signature="e#42#72#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -785,8 +735,120 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="34" column="9" selection-start-line="34" selection-end-line="34" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PayementBundle/Client/StripeClient.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-55" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/stripe/stripe-php/lib/Balance.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/stripe/stripe-php/lib/Card.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/stripe/stripe-php/lib/ExternalAccount.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-29">
+          <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="65" selection-start-line="13" selection-start-column="65" selection-end-line="13" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="457">
+          <caret line="109" column="8" selection-start-line="109" selection-start-column="8" selection-end-line="109" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NotificationBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="11" column="38" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/FOSMessageBundle/views/Message/replyThread.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="88" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PayementBundle/Repository/CustomerRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PayementBundle/Resources/views/Default/payement.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="20" column="104" selection-start-line="20" selection-start-column="104" selection-end-line="20" selection-end-column="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/stripe/stripe-php/lib/Customer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-321">
+          <caret line="142" column="52" selection-start-line="142" selection-start-column="48" selection-end-line="142" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/stripe/stripe-php/lib/Charge.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1373">
+          <caret line="5" column="15" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PayementBundle/Resources/views/Default/myCards.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
-          <caret line="22" lean-forward="true" selection-end-line="169" />
+          <caret line="130" column="112" selection-start-line="130" selection-start-column="112" selection-end-line="130" selection-end-column="112" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/FOSMessageBundle/views/Message/search.html.twig">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PayementBundle/Entity/Customer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="76" column="25" selection-start-line="76" selection-start-column="20" selection-end-line="76" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Colis.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="227" lean-forward="true" selection-start-line="227" selection-end-line="227" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PayementBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="91" lean-forward="true" selection-start-line="91" selection-end-line="91" />
+          <folding>
+            <element signature="e#45#72#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

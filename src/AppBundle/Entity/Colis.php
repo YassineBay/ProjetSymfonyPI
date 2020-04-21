@@ -80,6 +80,152 @@ class Colis
      */
     private $idutilisateur;
 
+    /**
+     * @return int
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * @param int $id
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
+    }
+
+    /**
+     * @return string
+     */
+    public function getDepart()
+    {
+        return $this->depart;
+    }
+
+    /**
+     * @param string $depart
+     */
+    public function setDepart($depart)
+    {
+        $this->depart = $depart;
+    }
+
+    /**
+     * @return string
+     */
+    public function getDestination()
+    {
+        return $this->destination;
+    }
+
+    /**
+     * @param string $destination
+     */
+    public function setDestination($destination)
+    {
+        $this->destination = $destination;
+    }
+
+    /**
+     * @return string
+     */
+    public function getDateLimit()
+    {
+        return $this->dateLimit;
+    }
+
+    /**
+     * @param string $dateLimit
+     */
+    public function setDateLimit($dateLimit)
+    {
+        $this->dateLimit = $dateLimit;
+    }
+
+    /**
+     * @return string
+     */
+    public function getLabel()
+    {
+        return $this->label;
+    }
+
+    /**
+     * @param string $label
+     */
+    public function setLabel($label)
+    {
+        $this->label = $label;
+    }
+
+    /**
+     * @return string
+     */
+    public function getDescription()
+    {
+        return $this->description;
+    }
+
+    /**
+     * @param string $description
+     */
+    public function setDescription($description)
+    {
+        $this->description = $description;
+    }
+
+    /**
+     * @return string
+     */
+    public function getImage()
+    {
+        return $this->image;
+    }
+
+    /**
+     * @param string $image
+     */
+    public function setImage($image)
+    {
+        $this->image = $image;
+    }
+
+    /**
+     * @return float
+     */
+    public function getReward()
+    {
+        return $this->reward;
+    }
+
+    /**
+     * @param float $reward
+     */
+    public function setReward($reward)
+    {
+        $this->reward = $reward;
+    }
+
+    /**
+     * @return \User
+     */
+    public function getIdutilisateur()
+    {
+        return $this->idutilisateur;
+    }
+
+    /**
+     * @param \User $idutilisateur
+     */
+    public function setIdutilisateur($idutilisateur)
+    {
+        $this->idutilisateur = $idutilisateur;
+    }
+
+
+
 
 }
 

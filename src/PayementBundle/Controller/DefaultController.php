@@ -2,6 +2,7 @@
 
 namespace PayementBundle\Controller;
 
+use AppBundle\Entity\Colis;
 use Doctrine\ORM\Mapping\Entity;
 use PayementBundle\Entity\Customer;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
@@ -35,10 +36,14 @@ class DefaultController extends Controller
             ->getForm();
         $userRepo = $em->getRepository('PayementBundle:Customer');
         $cust = $userRepo->findOneById($this->container->get('security.token_storage')->getToken()->getUser());
+      ;
         if ( !empty($cust) ){
            //We are going to render to an existing credit card page
-            $RetrievedCustomer = \Stripe\Customer::retrieve('cus_H6186JhVl2FNN8');
-            return $this->render('@Payement/Default/myCards.html.twig',["test"=>$RetrievedCustomer]);
+            $RetrievedCustomer = \Stripe\Customer::retrieve($cust[0]->getId());
+            return $this->render('@Payement/Default/myCards.html.twig',["test"=>$RetrievedCustomer,
+            'form' => $form->createView(),
+            'stripe_public_key' => $this->getParameter('stripe_public_key')
+            ]);
         }else{
         //var_dump($cust[0]->getId());
         //Check if email exist then show an other View <<<<
@@ -74,17 +79,58 @@ class DefaultController extends Controller
 
 
         /**
-         * @Route("/charge" , name="chargeCustomer")
+         * @Route("/charge/{idColis}" , name="chargeCustomer")
          */
-        public function chargeAction($customer,$colis,$token){
+        public function chargeAction($idColis){
             \Stripe\Stripe::setApiKey('sk_test_2APKdZmMUOLIX9CiUu3hdB9Z00kd880Rdb');
+            $em = $this->getDoctrine()->getManager();
+            $userRepo = $em->getRepository('PayementBundle:Customer');
+            $cust = $userRepo->findOneById($this->container->get('security.token_storage')->getToken()->getUser());
+
+            // Here we are going to retrieve the package and get its price to charge it
+            $colis = new Colis();
+
             $charge = \Stripe\Charge::create([
-                'amount' => '1000',
+                'amount' => $colis->getReward(),
                 'currency' => 'usd',
-                'customer' => $customer->id,
+                'customer' => $cust[0]->getId()
             ]);
 
         }
 
+    /**
+     * @Route("/updatecard/{id}" , name="update_card")
+     */
+        public function updateCardAction($id)
+        {
+            \Stripe\Stripe::setApiKey('sk_test_2APKdZmMUOLIX9CiUu3hdB9Z00kd880Rdb');
 
+            $firstName = $_POST['first_name'];
+            $lastName =$_POST['last_name'];
+            $custInfo = \Stripe\Customer::update
+                    (
+                        $id,
+                        ['name' => $firstName." ".$lastName,
+                            'description' => "TESTTTT"
+                        ]
+                    );
+                return $this->redirectToRoute("pay_show" ,["test"=> $custInfo]);
+        }
+
+
+    /**
+     * @Route("/deletecard/{id}" , name="delete_card")
+     */
+        public function deleteCustomerCardAction($id){
+            \Stripe\Stripe::setApiKey('sk_test_2APKdZmMUOLIX9CiUu3hdB9Z00kd880Rdb');
+            $customer = \Stripe\Customer::retrieve(
+                $id
+            );
+            $customer->delete();
+            $em = $this->getDoctrine()->getManager();
+            $customer = $em->getRepository(Customer::class)->find($id);
+            $em->remove($customer);
+            $em->flush();
+            return $this->redirectToRoute("pay_show");
+        }
 }

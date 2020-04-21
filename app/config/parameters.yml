@@ -1,0 +1,14 @@
+# This file is auto-generated during the composer install
+parameters:
+    database_host: 127.0.0.1
+    database_port: null
+    database_name: fithnitek
+    database_user: root
+    database_password: null
+    mailer_transport: smtp
+    mailer_host: 127.0.0.1
+    mailer_user: testPI@testPI.com
+    mailer_password: TestPI
+    secret: ThisTokenIsNotSoSecretChangeIt
+    stripe_public_key: pk_test_PgzdNy91RgPuzNDsDbn8Awxk00hF5cVNdL
+    stripe_secret_key: sk_test_2APKdZmMUOLIX9CiUu3hdB9Z00kd880Rdb
