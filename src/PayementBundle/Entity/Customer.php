@@ -134,8 +134,5 @@ class Customer
     {
         $this->datecreation = $datecreation;
     }
-
-
-
 }
 

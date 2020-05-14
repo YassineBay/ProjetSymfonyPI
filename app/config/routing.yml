@@ -8,6 +8,14 @@ notification:
     type:     annotation
     prefix:   /notif
 
+notification_api:
+    resource: "@NotificationBundle/Controller/Api/"
+    type:     annotation
+
+payement_api:
+    resource: "@PayementBundle/Controller/Api/"
+    type:     annotation
+
 payement:
     resource: "@PayementBundle/Controller/"
     type:     annotation
@@ -16,8 +24,10 @@ payement:
 app:
     resource: '@AppBundle/Controller/'
     type: annotation
+
 fos_user:
     resource: "@FOSUserBundle/Resources/config/routing/all.xml"
+
 fos_message:
     resource: "@FOSMessageBundle/Resources/config/routing.xml"
     prefix: /messanger

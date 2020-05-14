@@ -17,4 +17,20 @@ class DefaultController extends Controller
         $rowNumber = sizeof($listNotif);
         return $this->render('@Notification/Default/showNotif.html.twig',["listNotif"=>$listNotif , "rowNumber"=>$rowNumber]);
     }
+
+
+    /**
+     * @Route("/delete/{id}",name="delete_notif")
+     */
+    public function deleteNotifAction($id)
+    {
+        $em =$this->getDoctrine()->getManager();
+        $notif = $em->getRepository(Notifications::class)->find($id);
+        $em->remove($notif);
+        $em->flush();
+        return $this->redirectToRoute("show_notif");
+    }
+
+
+
 }

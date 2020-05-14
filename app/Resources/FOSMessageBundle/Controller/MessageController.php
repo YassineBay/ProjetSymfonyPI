@@ -34,6 +34,20 @@ class MessageController extends AbstractController
         ));
     }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     /**
      * Displays the authenticated participant messages sent.
      *

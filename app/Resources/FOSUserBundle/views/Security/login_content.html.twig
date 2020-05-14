@@ -1,0 +1,114 @@
+{% trans_default_domain 'FOSUserBundle' %}
+{% if error %}
+    <div>{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+{% endif %}
+<head>
+    <title>Login</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="{{ asset('img/Login/icons/favicon.ico') }}"/>
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{{ asset('vendor/bootstrap/css/bootstrap.min.css') }}">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{{ asset('fonts/font-awesome-4.7.0/css/font-awesome.min.css') }}">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{{ asset('fonts/Linearicons-Free-v1.0.0/icon-font.min.css') }}">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{{ asset('vendor/animate/animate.css') }}">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{{ asset('vendor/css-hamburgers/hamburgers.min.css') }}">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{{ asset('vendor/select2/select2.min.css') }}">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/util.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/main.css') }}">
+    <!--===============================================================================================-->
+</head>
+<body>
+ <div>
+            {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+                <div class="limiter">
+                    <div class="container-login100">
+                        <div class="wrap-login100 p-l-50 p-r-50 p-t-77 p-b-30">
+         {{ 'layout.logged_in_as'|trans({'%username%': app.user.username}, 'FOSUserBundle') }} |
+                <a href="{{ path('fos_user_security_logout') }}">
+                    {{ 'layout.logout'|trans({}, 'FOSUserBundle') }}
+                </a>
+                        </div>
+                     </div>
+                </div> {% else %}
+
+
+<div class="limiter">
+    <div class="container-login100">
+        <div class="wrap-login100 p-l-50 p-r-50 p-t-77 p-b-30">
+            <form action="{{ path("fos_user_security_check") }}" class="login100-form validate-form" method="post">
+                {% if csrf_token %}
+                    <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
+                {% endif %}
+					<span class="login100-form-title p-b-55">
+						Login
+					</span>
+
+                <div class="wrap-input100 validate-input m-b-16" data-validate = "Valid email is required: ex@abc.xyz">
+                    <!--<label for="username">{{ 'security.login.username'|trans }}</label>-->
+                    <input class="input100" id="username" type="text" name="_username" value="{{ last_username }}" required="required" autocomplete="username" placeholder="Username">
+                    <span class="focus-input100"></span>
+                    <span class="symbol-input100">
+							<span class="lnr lnr-envelope"></span>
+						</span>
+                </div>
+
+                <div class="wrap-input100 validate-input m-b-16" data-validate = "Password is required">
+                    <!--<label for="password">{{ 'security.login.password'|trans }}</label>-->
+                    <input class="input100" type="password" id="_password" name="_password" placeholder="Password" required="required" autocomplete="current-password">
+                    <span class="focus-input100"></span>
+                    <span class="symbol-input100">
+							<span class="lnr lnr-lock"></span>
+						</span>
+                </div>
+
+                <div class="contact100-form-checkbox m-l-4">
+                    <input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
+                    <label class="label-checkbox100" for="ckb1">
+                        Remember me
+                    </label>
+                </div>
+
+                <div class="container-login100-form-btn p-t-25">
+                    <button class="login100-form-btn" href="{{ path('show_notif') }}" type="submit" id="_submit" name="_submit" value="{{ 'security.login.submit'|trans }}">
+                        Login
+                    </button>
+                </div>
+                <div class="text-center w-full p-t-115">
+						<span class="txt1">
+							Not a member?
+						</span>
+
+                    <a class="txt1 bo1 hov1" href="{{ path('fos_user_registration_register') }}">
+                        Sign up now
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!--===============================================================================================-->
+<script src="{{ asset('vendor/jquery/jquery-3.2.1.min.js') }}"></script>
+<!--===============================================================================================-->
+<script src="{{ asset('vendor/bootstrap/js/popper.js') }}"></script>
+<script src="{{ asset('vendor/bootstrap/js/bootstrap.min.js') }}"></script>
+<!--===============================================================================================-->
+<script src="{{ asset('vendor/select2/select2.min.js') }}"></script>
+<!--===============================================================================================-->
+<script src="{{ asset('js/main.js') }}"></script>
+
+</body>
+{% endif %}
+</div>
+</html>

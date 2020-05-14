@@ -26,7 +26,7 @@
                                 <div class="card-body">
                                     <h5 class="card-title">Someone want your service</h5>
                                     <p class="card-text">{{ notif.getContent }}</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    <a href="{{ path("delete_notif",{id:notif.id}) }}" class="btn btn-primary">Ok got it!</a>
                                     <a href="{{path('fos_message_thread_reply',{'recipient':notif.idpropc})}}"><img src="{{asset('img/notification/send.png')}}"/ style="width:30px;float:right;"></a>
                                 </div>
                             </div>
